@@ -1,0 +1,138 @@
+page {
+  color: #333333;
+  font-weight: 400;
+  font-size: 32rpx;
+}
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 250, 250, 1) 100%
+  );
+}
+
+.cover-page {
+  position: fixed;
+  height: 100% !important;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+  background: initial;
+  z-index: 10;
+  padding: 0;
+}
+
+.cover-btn {
+  position: absolute;
+  height: 100% !important;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+  background: initial;
+  z-index: 10;
+  padding: 0;
+}
+
+.cover-btn::after {
+  border-color: transparent;
+  background: initial;
+}
+
+.bottom-tips {
+  position: fixed;
+  bottom: 20rpx;
+  width: 100%;
+  color: #019cff;
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 34rpx;
+}
+
+.tabBar-shadow {
+  pointer-events: none;
+  position: fixed;
+  bottom: -8rpx;
+  left: 0;
+  width: 100%;
+  height: 8rpx;
+  box-shadow: 0 -4rpx 8rpx rgba(0, 0, 0, 0.05);
+}
+
+.aspectFill {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.placeholder {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #c5c5c5;
+}
+
+.foot-btn {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.foot-btn-text {
+  line-height: 128rpx;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgb(199, 199, 199);
+}
+
+.btn.active {
+  background-color: #019cff;
+}
+
+.ico-arrow {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  transition: 0.3s;
+}
+
+.ico-arrow.down {
+  transform: rotate(180deg);
+}
+
+.draw {
+  position: relative;
+  margin: 40rpx auto;
+  width: 550rpx;
+  height: 1031.06rpx;
+  text-align: center;
+}
+
+.draw-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 550rpx;
+  height: 1031.06rpx;
+}
+
+.blur {
+    filter: blur(4px);
+}

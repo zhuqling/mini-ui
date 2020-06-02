@@ -1,0 +1,219 @@
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.rolling {
+  animation: rolling 1s linear infinite;
+}
+
+@-webkit-keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.amIn {
+  animation: amIn 0.5s ease-out;
+}
+
+@-webkit-keyframes amIn {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes amIn {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes inPage-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes inPage-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bottomIn {
+  animation: bottomIn 1s ease-in-out;
+}
+
+@-webkit-keyframes bottomIn {
+  0% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(-260rpx);
+  }
+
+  100% {
+    transform: translateY(-210rpx);
+  }
+}
+
+@keyframes bottomIn {
+  0% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(-260rpx);
+  }
+
+  100% {
+    transform: translateY(-210rpx);
+  }
+}
+
+.rock1 {
+  animation: rock1 15s linear infinite;
+}
+
+.rock1.delay5 {
+  animation-delay: 5s;
+}
+
+.rock1.delay10 {
+  animation-delay: 10s;
+}
+
+@-webkit-keyframes rock1 {
+  0% {
+    top: -360rpx;
+    left: 680rpx;
+  }
+
+  100% {
+    top: 360rpx;
+    left: -680rpx;
+  }
+}
+
+@keyframes rock1 {
+  0% {
+    top: -360rpx;
+    left: 680rpx;
+  }
+
+  100% {
+    top: 360rpx;
+    left: -680rpx;
+  }
+}
+
+/* 底图滚动 */
+.rock-wrap {
+  position: relative;
+  z-index: 1;
+  width: 670px;
+  height: 360px;
+  border-radius: 20px;
+  background-color: #019bff;
+  overflow: hidden;
+}
+
+.rock {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: -460px;
+  left: 780px;
+  height: 460px;
+  width: 780px;
+  transform: rotate(45deg);
+  background: #666;
+  animation: rock1 15s linear infinite;
+}
