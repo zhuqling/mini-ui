@@ -4,8 +4,7 @@
 
 @font-face {
   font-family: "DINPfont";
-  src: url("https://static.hongbaodada.com/font/DINPro-Bold.otf")
-    format("truetype");
+  src: url("/font/DINPro-Bold.otf") format("truetype");
 }
 
 /** font size **/
